@@ -264,10 +264,7 @@ elif page == "🤖 Prédiction":
 
            # Prédiction ML unique
            risk_pred = risk_model.predict([text])[0]
-           st.write("Risk =", risk_pred)
-
-           st.markdown("---")
-           st.subheader("Résultats")
+           
            # Résultats dérivés du risque
 
            if risk_pred == "Low":
