@@ -73,7 +73,7 @@ streamlit run app.py
 - Pour ajouter une 5e prédiction (ex : prédire l'outil IA impliqué), duplique
   le bloc dans `train_models.py` avec une nouvelle cible (`tool_target`), puis
   ajoute le modèle correspondant dans `app.py`.
-- Tu peux remplacer `RandomForestClassifier` par `LinearSVC`,
+- Tu peux remplacer `LogisticRegression` par `LinearSVC`,
   `GradientBoostingClassifier`, etc. selon les performances obtenues.
 - Si ton dataset évolue (nouvelles colonnes, nouvelles valeurs), adapte les
   fonctions `simplify_outcome()` et `risk_level()` dans `train_models.py`.
