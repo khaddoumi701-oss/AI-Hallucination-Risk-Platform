@@ -388,27 +388,40 @@ elif page == "🤖 Prédiction":
 elif page == "ℹ️ À propos":
     st.title("ℹ️ À propos de ce projet")
     st.markdown("""
-     ### AI Hallucination Risk Platform 
+     ### ⚖️ AI Hallucination Risk Platform
 
-    Cette plateforme analyse un jeu de données recensant des **cas judiciaires
-    où une intelligence artificielle générative (ChatGPT, Copilot, Claude, etc.)
-    a produit des hallucinations** (citations fabriquées, fausses jurisprudences,
-    faits inventés...) utilisées par des avocats, des justiciables ou des experts.
+Cette plateforme analyse un jeu de données recensant des **cas judiciaires impliquant des hallucinations générées par des systèmes d’intelligence artificielle** (ChatGPT, Claude, Gemini, Microsoft Copilot, etc.).
 
-    **Fonctionnalités :**
-    - 📊 Tableau de bord interactif (statistiques générales)
-    - 📈 Analyses détaillées (sanctions, décisions, évolution temporelle, géographie)
-    - 🤖 Module de **prédiction multi-critères** basé sur 4 modèles ML entraînés
-      sur le texte descriptif de chaque cas :
-        - Niveau de risque global
-        - Probabilité de sanction professionnelle
-        - Probabilité de pénalité financière
-        - Catégorie probable de décision
+Une hallucination correspond à la production d’informations erronées ou fictives présentées comme réelles, telles que des citations fabriquées, des jurisprudences inexistantes, des références juridiques incorrectes ou des faits inventés. Dans le domaine juridique, ces erreurs peuvent avoir des conséquences importantes sur les procédures et les décisions de justice.
 
-    ---
-    **Projet de Data Science 2026**
-    Réalisé par **Ikram Khaddoum**
-    Encadré par **Pr. Aaroud**
+### Fonctionnalités
+
+- 📊 **Tableau de bord interactif** présentant les principaux indicateurs et statistiques du dataset.
+- 📈 **Analyse exploratoire des données** : répartition des outils d’IA, sanctions professionnelles, décisions judiciaires, évolution temporelle et analyse géographique.
+- 🤖 **Module de prédiction du niveau de risque** basé sur un modèle de Machine Learning utilisant le traitement automatique du langage naturel (NLP), la vectorisation TF-IDF et la régression logistique.
+- ⚖️ **Évaluation automatique des conséquences potentielles** d’un cas analysé :
+  - Niveau de risque global (Low / Medium / High)
+  - Sanction professionnelle probable
+  - Pénalité financière probable
+  - Catégorie probable de décision judiciaire
+- 📋 Interface simple et intuitive permettant l’analyse de nouveaux cas à partir d’une description textuelle.
+
+### Technologies Utilisées
+
+- Python
+- Streamlit
+- Pandas
+- Scikit-Learn
+- Plotly
+- TF-IDF
+- Régression Logistique
+
+---
+
+**Projet de Data Science 2025-2026**  
+**Réalisé par : Ikram Khaddoum**  
+**Encadré par : Pr. Aaroud**  
+**Faculté des Sciences – Université Chouaïb Doukkali**
     """ )   
 
 
